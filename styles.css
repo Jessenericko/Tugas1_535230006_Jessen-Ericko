@@ -62,11 +62,16 @@ header {
 }
 
 .profile-image img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 5px solid #fff;
     margin-bottom: 10px;
+    transition: transform 0.3 ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.2);
 }
 
 .profile-info h1 {
@@ -135,6 +140,26 @@ h2 {
     display: flex;
     flex-wrap: wrap;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: hsl(150, 6%, 7%);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #070807;
+}
+
 
 .skills-list li {
     background-color: #28a745; 
